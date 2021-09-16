@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+      <!-- explicit list view definition -->
+<record model="ir.ui.view" id="geracad_aluno_view_partner_form_inherit">
+    <field name="name">Alunos Form</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+         
+      <field name="title" position="after">
+            <field name="e_aluno" string="É Aluno"/>
+      </field>
+    </field>
+  </record>
+    </data>
+</odoo>
