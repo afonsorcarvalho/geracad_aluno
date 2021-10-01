@@ -20,6 +20,7 @@
           <field name="parent_id" invisible="1" readonly="1"/>
           <field name="active" invisible="1"/>
           <field name="e_aluno" invisible="1"/>
+          <field name="e_professor" invisible="1"/>
         </tree>
     
       </field>
@@ -38,9 +39,15 @@
                 <h1>
                   <field name="name" default_focus="1" placeholder="Nome do Aluno" required="1" />
                 </h1>
+                <span class="o_form_label" name="label_cpf">
+                  CPF
+               </span>
                 <h3>
                   <field name="l10n_br_cnpj_cpf" placeholder="CPF" nolabel="1" required="1"/>
                 </h3>
+                <span class="o_form_label" name="label_data_nascimento">
+                  Data de Nascimento
+               </span>
                 <h3>
                   <field name="data_nascimento" placeholder="Data de Nascimento" required="1"/>
                 </h3>
@@ -58,13 +65,14 @@
                         <field name="street2" placeholder="Complemento ..." class="o_address_street"/>
                         <field name="l10n_br_district" placeholder="Bairro" class="o_address_city" />
                         <field name="l10n_br_number" placeholder="Número" class="o_address_city" />  
+                        <field name="ponto_referencia_endereco" placeholder="Ponto de referência" />
                         <field name="city" placeholder="City" class="o_address_city"/>
                         <field name="state_id" class="o_address_state" placeholder="Estado" options="{'no_open': True, 'no_quick_create': True}"/>
                         <field name="country_id" placeholder="País" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
                     </div>
                     <field name="e_aluno" invisible="1" />
                 </group>
-                <group>
+                <group string="Contatos">
                    
                     <field name="phone" />
                     <field name="mobile"/>
@@ -76,17 +84,23 @@
                     
                 </group>
             </group>
-            <group>
-              <group>
-                  <span class="o_form_label o_td_label" name="filiacao">
-                     <b>Filiação</b>
-                  </span>
+            <group name= "outros">
+              <group string="Filiação">
+                  
                   
                     <field name="nome_pai" placeholder="Nome do pai..."/>
                     <field name="nome_mae" placeholder="Nome do mãe..."/>
               </group>
+              <group string="Outros">
+                  
+                    <field name="sexo" placeholder="Sexo..."/>
+                    <field name="rg" placeholder="RG..."/>
+                    <field name="escolaridade" placeholder="Escolaridade..."/>
+                    <field name="observacoes" placeholder="Observações..."/>
+                    
+              </group>
               
-          </group>
+            </group>
             </sheet>
             <div class="oe_chatter">
               <field name="message_follower_ids" widget="mail_followers"/>

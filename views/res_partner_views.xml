@@ -9,6 +9,7 @@
          
       <field name="title" position="after">
             <field name="e_aluno" string="É Aluno"/>
+            <field name="e_professor" string="É Professor"/>
       </field>
     </field>
   </record>
