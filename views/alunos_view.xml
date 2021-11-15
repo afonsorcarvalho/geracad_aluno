@@ -199,19 +199,21 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="Alunos" id="geracad_aluno.menu_root" web_icon="geracad_aluno,static/description/icon.png"/>
+    <menuitem name="Alunos" id="geracad_aluno.menu_root" web_icon="geracad_aluno,static/description/icon.png"
+    action="geracad_aluno_action_window"
+    />
 
     <!-- menu categories -->
 
-    <menuitem name="Matricular" id="geracad_aluno.menu_1" parent="geracad_aluno.menu_root"/>
-    <menuitem name="Menu 2" id="geracad_aluno.menu_2" parent="geracad_aluno.menu_root"/>
+    <!-- <menuitem name="Matricular" id="geracad_aluno.menu_1" parent="geracad_aluno.menu_root"/>
+    <menuitem name="Menu 2" id="geracad_aluno.menu_2" parent="geracad_aluno.menu_root"/> -->
 
     <!-- actions -->
 
-    <menuitem name="Em Cursos" id="geracad_aluno.menu_1_list" parent="geracad_aluno.menu_1"
+    <!-- <menuitem name="Em Cursos" id="geracad_aluno.menu_1_list" parent="geracad_aluno.menu_1"
               action="geracad_aluno_action_window"/>
     <menuitem name="Em Disciplina" id="geracad_aluno.menu_1_list" parent="geracad_aluno.menu_1"
-              action="geracad_aluno_action_window"/>
+              action="geracad_aluno_action_window"/>  -->
     <!-- <menuitem name="Server to list" id="geracad_aluno" parent="geracad_aluno.menu_2"
               action="geracad_aluno.action_server"/> -->
 
