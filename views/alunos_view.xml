@@ -6,7 +6,14 @@
       <field name="name">Alunos list</field>
       <field name="model">res.partner</field>
       <field name="arch" type="xml">
-        <tree>
+        <tree 
+        edit="false"
+        create="false"
+        
+        delete="false"
+        
+        
+        >
           <field name="display_name" string="Nome"/>
           <field name="function" invisible="1"/>
           <field name="phone" class="o_force_ltr" optional="show"/>
