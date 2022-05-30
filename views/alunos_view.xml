@@ -164,65 +164,12 @@
       <field name="act_window_id" ref="geracad_aluno_action_window"/>
     </record>
 
- 
-    
-    <!-- <record id="action_tree,form_act_window" model="ir.actions.act_window">
-        <field name="type">ir.actions.act_window</field>
-        <field name="name">Human readable name</field>
-        <field name="res_model">model.name</field>
-        <field name="view_mode">tree,form</field>
-        <field name="view_type">form</field>
-        <field name="target">current</field>
-        <field name="domain">[]</field>
-        <field name="context">\{}</field>
-        <field name="search_view_id" ref="ir.ui.view" />
-    </record>
-    
-    <record id="action_ir.actions.act_window_ir.ui.view" model="ir.actions.act_window.view">
-        <field name="act_window_id" ref="ir.actions.act_window" />
-        <field name="view_id" ref="ir.ui.view" />
-        <field name="view_mode">tree</field>
-        <field name="sequence" eval="1" />
-        <field name="multi" eval="False" />
-    </record>
-     -->
-
-
-    <!-- server action to the one above -->
-
-    <!-- <record model="ir.actions.server" id="geracad_aluno.action_server">
-      <field name="name">geracad_aluno server</field>
-      <field name="model_id" ref="model_geracad_aluno_geracad_aluno"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record> -->
-
-
     <!-- Top menu item -->
 
     <menuitem name="Alunos" id="geracad_aluno.menu_root" web_icon="geracad_aluno,static/description/icon.png"
     action="geracad_aluno_action_window"
     />
 
-    <!-- menu categories -->
-
-    <!-- <menuitem name="Matricular" id="geracad_aluno.menu_1" parent="geracad_aluno.menu_root"/>
-    <menuitem name="Menu 2" id="geracad_aluno.menu_2" parent="geracad_aluno.menu_root"/> -->
-
-    <!-- actions -->
-
-    <!-- <menuitem name="Em Cursos" id="geracad_aluno.menu_1_list" parent="geracad_aluno.menu_1"
-              action="geracad_aluno_action_window"/>
-    <menuitem name="Em Disciplina" id="geracad_aluno.menu_1_list" parent="geracad_aluno.menu_1"
-              action="geracad_aluno_action_window"/>  -->
-    <!-- <menuitem name="Server to list" id="geracad_aluno" parent="geracad_aluno.menu_2"
-              action="geracad_aluno.action_server"/> -->
 
   </data>
 </odoo>
