@@ -15,6 +15,7 @@ class geracad_aluno(models.Model):
     data_nascimento = fields.Date("Data de Nascimento")
     escolaridade = fields.Char()
     rg = fields.Char("RG")
+    rg_data_expedicao = fields.Date("Data Exp. RG")
     sexo = fields.Selection([('M', 'Masculino'), ('F', 'Feminino'), ('O', 'Outros')])
     
 

@@ -102,6 +102,7 @@
                   
                     <field name="sexo" placeholder="Sexo..."/>
                     <field name="rg" placeholder="RG..."/>
+                    <field name="rg_data_expedicao" placeholder="Data de Expedição..."/>
                     <field name="escolaridade" placeholder="Escolaridade..."/>
                     <field name="observacoes" placeholder="Observações..."/>
                     
