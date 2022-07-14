@@ -168,7 +168,7 @@
     <!-- Top menu item -->
 
     <menuitem name="Alunos" id="geracad_aluno.menu_root" web_icon="geracad_aluno,static/description/icon.png"
-    action="geracad_aluno_action_window"
+    action="geracad_aluno_action_window" sequence="0"
     />
 
 
